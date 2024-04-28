@@ -101,6 +101,15 @@ For this we have used anaconda containing jupyter notebook. In the file we have 
 ### 2. Implementation of py file –
 For this we have used IDLE python 3.10 (64 bit). To get access with the libraries in our code, we have used command prompt.
 
+## Sample Screenshots
+![Screenshot_20230612_110942_Video Player](https://github.com/atharvm416/Driver_Alert_System/assets/112277897/7db6c4a7-3204-4ffb-a20e-947ffdfeafb5)
+![Screenshot_20230612_111123_Video Player](https://github.com/atharvm416/Driver_Alert_System/assets/112277897/3ee0cb20-c46e-47e0-b183-5a584287aa0b)
+![Screenshot_20230612_111203_Video Player](https://github.com/atharvm416/Driver_Alert_System/assets/112277897/09c862d5-7d51-40ce-969f-9d7522d45d0f)
+![Screenshot_20230612_111217_Video Player](https://github.com/atharvm416/Driver_Alert_System/assets/112277897/e85c4a39-9e4e-4262-a7a3-d6fa47be285c)
+![Screenshot_20230612_111232_Video Player](https://github.com/atharvm416/Driver_Alert_System/assets/112277897/039d022d-7636-4ba3-b0a9-033c67b1a880)
+![Screenshot_20230612_111257_Video Player](https://github.com/atharvm416/Driver_Alert_System/assets/112277897/fb43ee85-f9c0-4d54-b738-f58cc642fbf8)
+
+
 ## Description of the Integration Modules
 In our system we have only Integrated mobile phone as any external resource to capture higher resolution image. This connection is done by the connecting the laptop and the mobile phone physically and with the use of the IP Webcam app we started capturing the images from our mobile phone.
 
