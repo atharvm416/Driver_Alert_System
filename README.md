@@ -6,7 +6,7 @@
 3. To ring alarm if driver is indulging in any irrelevant behaviour
 
 ## Scope and Limitations
-* The scope of the system in real-time is to continuously monitor the driver's behavior and alert them in case of any distractions while driving. The system's realtime capabilities make it highly effective in detecting distractions as they occur and providing timely alerts, which can help prevent accidents.
+* The scope of the system in real-time is to continuously monitor the driver's behavior and alert them in case of any distractions while driving. The system's real-time capabilities make it highly effective in detecting distractions as they occur and providing timely alerts, which can help prevent accidents.
 
 * In addition, the system can be used in various real-world scenarios, such as commercial fleets, personal vehicles, and public transportation systems. This system can also be integrated with other safety features such as lane departure warning systems and automatic emergency braking systems to further improve overall safety.
 
@@ -84,17 +84,15 @@ We have specified that the model be in HDF5 format. HDF5 format, which is used f
 ### 6. Real-time capturing:
 We have obtained real-time data by using mobile phones cameras. With the help of the app known as "IP Webcam", which is available on the Play Store. Live images are taken by cv2.VideoCapture(url) from the library CV2, where the url is provided by the app, and we require a laptop to connect to the same network as our mobile phone.
 
-### 7. Image For Detection:
+### 7. Detection:
 After capturing the image file, we call the function from driver_prediction.py and store the returned string value in a variable named "Label".
-
-### 8. Detection:
 The image is converted to a 4D tensor array from RGB. By using pickle and a selftrained model, specify the notation for which the image is captured. Then it returns a string to the main file.
 
-### 9. Display and Alert:
+### 8. Display and Alert:
 We highlight the notation on our screen, and after 3 seconds, if the same activity is present without "safe_driving", then the system makes the sound of the notation that has been detected for the last 3 seconds.
 
 
-## implementation detail 
+## Implementation Detail 
 We have implemented 3 files in total from which 2 are .py and 1 is .ipyb file.
 
 ### 1. Implementation of ipyb file –
@@ -106,10 +104,9 @@ For this we have used IDLE python 3.10 (64 bit). To get access with the librarie
 ## Description of the Integration Modules
 In our system we have only Integrated mobile phone as any external resource to capture higher resolution image. This connection is done by the connecting the laptop and the mobile phone physically and with the use of the IP Webcam app we started capturing the images from our mobile phone.
 
-## Testing
-Internal testing is carried out in our system as self-models are created. Due to the fact that we have set the test_size parameter to 0.2, 20% of the data will be used for testing and the remaining 80% for model training. The random_state option is set to 42, which assures that the same random splits will be generated each time the code is executed. We fit it into the model and run it to evaluate whether the results are as expected.
-
 ## Future Scope
 Firstly, improving the system's performance in low-light conditions, such as during nighttime or in dark mode, can significantly enhance its accuracy. This can be achieved by incorporating night vision cameras specifically designed to capture clear images in challenging lighting environments. By leveraging such advanced camera technology, the system will be better equipped to detect and recognize faces, ultimately improving its performance and accuracy during nighttime operations.
+
 Another potential area for future expansion is the incorporation of motion detection capabilities. Currently, the system is unable to determine whether the driver's vehicle is in motion or stationary. By integrating motion detection algorithms and techniques into the existing model, the system can gain the ability to identify the movement of the vehicle. This feature could be valuable for assessing driver behavior and detecting potentially dangerous situations, such as when a driver falls asleep or loses control of the vehicle while in motion.
+
 Furthermore, the project could be extended to include the detection of Bluetooth headphones and other electronic devices. As the usage of Bluetooth devices, including headphones, continues to rise, it becomes increasingly important to monitor their presence and usage while driving. By training the model to identify Bluetooth devices, the system can alert the driver if they are using such devices, which could contribute to distracted driving. This expansion would enhance the overall effectiveness of the Driver Alert System, ensuring a comprehensive approach to promoting safe driving practices.
