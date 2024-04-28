@@ -86,7 +86,7 @@ We have obtained real-time data by using mobile phones cameras. With the help of
 
 ### 7. Detection:
 After capturing the image file, we call the function from driver_prediction.py and store the returned string value in a variable named "Label".
-The image is converted to a 4D tensor array from RGB. By using pickle and a selftrained model, specify the notation for which the image is captured. Then it returns a string to the main file.
+The image is converted to a 4D tensor array from RGB. By using pickle and a self-trained model, specify the notation for which the image is captured. Then it returns a string to the main file.
 
 ### 8. Display and Alert:
 We highlight the notation on our screen, and after 3 seconds, if the same activity is present without "safe_driving", then the system makes the sound of the notation that has been detected for the last 3 seconds.
