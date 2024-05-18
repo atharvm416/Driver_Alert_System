@@ -10,7 +10,7 @@
 
 * In addition, the system can be used in various real-world scenarios, such as commercial fleets, personal vehicles, and public transportation systems. This system can also be integrated with other safety features such as lane departure warning systems and automatic emergency braking systems to further improve overall safety.
 
-* Overall, the real-time scope of the system can help reduce the number of accidents caused by distracted driving, thus saving lives and reducing the economic burden of accidents.
+* Overall, the real-time scope of the system should reduce the number of accidents caused due to the distraction of driving, thus saving lives and reducing the economic burden of accidents.
 
 * However, there are also some limitations to this project. Firstly, the system relies on the accuracy of the self-trained model, which can be affected by factors such as lighting and camera angle. Secondly, the system may not be able to detect all instances of distracted behavior, as it is limited to the behaviors it has been trained to recognize. Thirdly, the system may not be compatible with all types of vehicles or driving situations. Lastly, the system may be affected by false alarms, which could potentially cause driver distraction and reduce the effectiveness of the system.
 
@@ -41,18 +41,19 @@ These requirements guided our design and development process, ensuring that we d
 
 ##  Validation Criteria
 
-| Sr. No | Test Case Title           | Description                                                      | Expected Output |
-|--------|---------------------------|------------------------------------------------------------------|-----------------|
-| 1      | Safe Driving              | Driver should be in ideal state of driving for drinking. This state detected here. | No alarm        |
-| 2      | Right-handed texting      | When driver is using mobile phone and he is texting while mobile at right hand. | Alarm rings     |
-| 3      | Right-handed phone use    | When driver is talking on mobile phone and phone at right side. | Alarm rings     |
-| 4      | Left-handed texting       | When driver is using mobile phone and he is texting while mobile at left hand. | Alarm rings     |
-| 5      | Left-handed phone use     | When driver is talking on mobile phone and phone at left side. | Alarm rings     |
-| 6      | Operating the radio       | When driver is operating radio and he loses his concentration. | Alarm rings     |
-| 7      | Drinking                  | Driver started drinking something. | Alarm rings     |
-| 8      | Glancing behind           | Driver is glancing behind and talking with another person. | Alarm rings     |
-| 9      | Hair and makeup           | Driver is doing hair and makeup which makes him/her less concentrated. | Alarm rings     |
-| 10     | Talking with the passengers | Driver is talking with another person. | Alarm rings     |
+| Sr. No | Test Case Title             | Description                                                     | Expected Output |
+|--------|-----------------------------|-----------------------------------------------------------------|-----------------|
+| 1      | Safe Driving                | Driver is in an ideal state of driving, with hands on the wheel and eyes on the road. | No alarm        |
+| 2      | Right-handed Texting        | Driver is using a mobile phone and texting with their right hand. | Alarm rings     |
+| 3      | Right-handed Phone Use      | Driver is talking on a mobile phone held on the right side.      | Alarm rings     |
+| 4      | Left-handed Texting         | Driver is using a mobile phone and texting with their left hand.  | Alarm rings     |
+| 5      | Left-handed Phone Use       | Driver is talking on a mobile phone held on the left side.       | Alarm rings     |
+| 6      | Operating the Radio         | Driver is operating the radio and loses concentration.           | Alarm rings     |
+| 7      | Drinking                    | Driver starts drinking something.                                | Alarm rings     |
+| 8      | Glancing Behind             | Driver glances behind and talks with another person.             | Alarm rings     |
+| 9      | Hair and Makeup             | Driver is doing hair and makeup, which reduces concentration.    | Alarm rings     |
+| 10     | Talking with the Passengers | Driver talks with another person.                                | Alarm rings     |
+
 
 ## Environmental Setup
 
@@ -114,7 +115,7 @@ For this we have used IDLE python 3.10 (64 bit). To get access with the librarie
 In our system we have only Integrated mobile phone as any external resource to capture higher resolution image. This connection is done by the connecting the laptop and the mobile phone physically and with the use of the IP Webcam app we started capturing the images from our mobile phone.
 
 ## Future Scope
-Firstly, improving the system's performance in low-light conditions, such as during nighttime or in dark mode, can significantly enhance its accuracy. This can be achieved by incorporating night vision cameras specifically designed to capture clear images in challenging lighting environments. By leveraging such advanced camera technology, the system will be better equipped to detect and recognize faces, ultimately improving its performance and accuracy during nighttime operations.
+Firstly, improving the system's performance in low-light conditions, which is night time mostly, can significantly enhance its accuracy. This can be achieved by incorporating night vision cameras specifically designed to capture clear images in challenging lighting environments. By leveraging such advanced camera technology, the system will be better equipped to detect and recognize faces, ultimately improving its performance and accuracy during nighttime operations.
 
 Another potential area for future expansion is the incorporation of motion detection capabilities. Currently, the system is unable to determine whether the driver's vehicle is in motion or stationary. By integrating motion detection algorithms and techniques into the existing model, the system can gain the ability to identify the movement of the vehicle. This feature could be valuable for assessing driver behavior and detecting potentially dangerous situations, such as when a driver falls asleep or loses control of the vehicle while in motion.
 
