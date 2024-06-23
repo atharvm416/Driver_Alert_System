@@ -35,7 +35,6 @@ Based on our research, we identified the following requirements for our system:
 * Compatibility with a range of vehicles and driving conditions.
 * Integration of the components.
 * High resolution camera for capture live video.
-* Stable internet connection for the detection.
 
 These requirements guided our design and development process, ensuring that we developed a system that met the needs of our stakeholders and effectively addressed the problem of distracted driving.
 
